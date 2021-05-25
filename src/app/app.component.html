@@ -1,0 +1,24 @@
+<div class="main-container">
+  <div class="types-div">
+    <img class="img-container" src="assets/coffee_machine.jpg" alt="Coffee-Machine">
+    <div>
+      <button class="btn btn-primary" id="cappuccino" (click)="serveDrink($event)">Cappuccino</button>
+      <button class="btn btn-primary" id="coffee" (click)="serveDrink($event)">Coffee</button>
+      <button class="btn btn-primary" id="latte" (click)="serveDrink($event)">Latte</button>
+    </div>
+  </div>
+  <div class="inventory-container">
+    <h4>Inventory Stock</h4>
+    <hr>
+    <label>Milk Units: {{milk}}</label><br>
+    <label>Beans: {{beans}}</label><br>
+    <button class="btn btn-primary" (click)="resetIngredients()">Reset Inventory</button>
+    <hr>
+    <div class="drinks-container">
+      <h4>Drinks Made</h4>
+      <label>Cappuccino Qty: {{cappuccino}}  </label><br>
+      <label>Coffee Qty: {{coffee}}  </label><br>
+      <label>Latte Qty: {{latte}}  </label><br>
+    </div>
+  </div>
+</div>
